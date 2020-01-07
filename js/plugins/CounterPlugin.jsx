@@ -45,7 +45,7 @@ const CounterDialog = ({ enabled, floatingStyle, modal, draggable, onClose }) =>
 const Counter = compose(
     // connect the enabled props to the state and the close button to the toggleControl handler
     connect((state) => ({
-        enabled: state.controls && state.controls.sampleAbout && state.controls.sampleAbout.enabled || false,
+        enabled: state.controls && state.controls.counter && state.controls.counter.enabled || false,
         withButton: false
     }), {
         onClose: toggleControl.bind(null, 'counter', null)
@@ -81,7 +81,7 @@ const Counter = compose(
  * @memberof js.plugins
  * @props {boolean} [cfg.floating=false] if true, makes this window floating.
  */
-export default createPlugin("CounterPlugin", {
+export default createPlugin("Counter", {
     component: Counter,
     containers: {
         BurgerMenu: {

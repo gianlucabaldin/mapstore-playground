@@ -50,7 +50,7 @@ const plugins = require('@mapstore/product/plugins');
 // Sample plugins
 const Minimal = require('./plugins/Minimal').default;
 const SampleAbout = require('./plugins/SampleAbout').default;
-const CounterPlugin = require('./plugins/CounterPlugin').default;
+const Counter = require('./plugins/CounterPlugin').default;
 
 const appPlugins = {
     plugins: {
@@ -61,7 +61,7 @@ const appPlugins = {
         // SampleAbout is a minimal plugin with a dialog that can be opened from the burger menu
         SampleAbout: SampleAbout
         ,
-        CounterPlugin: CounterPlugin
+        CounterPlugin: Counter
 
     },
     requires: plugins.requires

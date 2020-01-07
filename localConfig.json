@@ -170,7 +170,7 @@
                     },
                     "tools": ["locate"]
                 }
-            }, "Version", "DrawerMenu","CounterPlugin",
+            }, "Version", "DrawerMenu","Counter",
             {
                 "name": "BackgroundSelector",
                 "cfg": {
@@ -264,7 +264,7 @@
             },
             "FeedbackMask"
         ],
-        "desktop": [ "SampleAbout", "CounterPlugin",
+        "desktop": [ "SampleAbout", "Counter",
           {
             "name": "Map",
             "cfg": {
